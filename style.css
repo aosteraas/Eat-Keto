@@ -10,13 +10,14 @@ Tags:
     margin-bottom: 10px;
 }
 
-.home .blog-post-title {
+.blog-post-title {
+    color: #18bc9c;
     margin-top: -40px;
     text-align: center;
-    max-width: 630px;
+    background: rgba(0, 0, 0, 0.75);
 }
 
-.home .blog-post-title a {
+.blog-post-title a {
     background: rgba(0, 0, 0, 0.75);
     display: inline;
 }
@@ -25,11 +26,12 @@ img {
     max-width: 100%;
     height: auto;
 }
-.home .blog-post .wp-post-image {
+.blog-post .wp-post-image {
     border-bottom: 20px solid #000;
 }
 .home .blog-post p {
     font-size: 1.2em;
+    margin: 20px 0;
 }
 .home .blog-post .col-md-4 {
     font-size: 1.2em;

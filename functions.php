@@ -55,6 +55,18 @@ function eatketo_pagination($pages = '', $range = 3)
          echo "</ul></nav>\n";
      }
 }
+
+// Enable widgetable sidebar
+// You may need to tweak your theme files, more info here - http://codex.wordpress.org/Widgetizing_Themes
+if ( function_exists('register_sidebar') )
+	register_sidebar(array(
+	'name' => 'Right Sidebar',
+	'before_widget' => '<aside>',
+	'after_widget' => '</aside>',
+	'before_title' => '<div class="siebar-module siebar-module-inset"><h4>',
+	'after_title' => '</h4></div>',
+));
+
 //////////////////////////////////////////////////////////////////
 // Register custom meta box
 //////////////////////////////////////////////////////////////////

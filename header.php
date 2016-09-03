@@ -23,10 +23,10 @@
 			</div>
 			<div id="navbar" class="collapse navbar-collapse">
 				<ul class="nav navbar-nav">
-					<li><a href="#">page</a></li>
-					<li><a href="#">page</a></li>
-					<li><a href="#">page</a></li>
-					<li><a href="#">page</a></li>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Recipes</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">About</a></li>
 				</ul>
 			</div>
 		</div>
