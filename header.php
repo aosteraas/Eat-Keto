@@ -10,7 +10,7 @@
 	<?php wp_head(); ?>
 
 </head>
-<body <?php body_class(); ?> style="padding-top:30px;">
+<body <?php body_class(); ?> style="padding-top:70px;">
 	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header">
