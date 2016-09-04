@@ -2,4 +2,5 @@
 	
 	<?php dynamic_sidebar() ?>	
 	
+	
 </div><!-- /.blog-sidebar -->

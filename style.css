@@ -5,7 +5,11 @@ Description: new theme for https://eatketo.com/;
 Version: 0.0.1
 Tags: 
 */
-
+.navbar-form {
+    margin-top: 12.5px;
+    margin-bottom: 12.5px;
+}
+    
 .home .blog-post {
     margin-bottom: 10px;
 }
@@ -14,7 +18,7 @@ Tags:
     color: #18bc9c;
     margin-top: -40px;
     text-align: center;
-    background: rgba(0, 0, 0, 0.75);
+    /*background: rgba(0, 0, 0, 0.75);*/
 }
 
 .blog-post-title a {
@@ -47,8 +51,11 @@ img {
 .home .middle-btn {
         border-left:1px solid white;
         border-right:1px solid white;
-    }
-
+}
+.page .blog-post-title {
+    margin-top:0;
+    text-align: left;
+}
 @media (max-width: 991px) {
     .home .middle-btn {
         border:0;
@@ -56,4 +63,7 @@ img {
         border-bottom:1px solid white;
 
     }
+}
+.media-left a { 
+    width: 50px;
 }

@@ -9,14 +9,19 @@
 					number_format_i18n( get_comments_number() ), get_the_title() );
 				?>
 			</h3>
-			<ul class="comment-list">
-				<?php 
-				wp_list_comments( array(
-					'short_ping'  => true,
-					'avatar_size' => 50,
-				) );
+				<ul class="list-unstyled">
+				<?php
+					// Register Custom Comment Walker
+					require_once('class-wp-bootstrap-comment-walker.php');
+
+					wp_list_comments( array(
+						'style'         => 'ul',
+						'short_ping'    => true,
+						'avatar_size'   => '64',
+						'walker'        => new Bootstrap_Comment_Walker(),
+					) );
 				?>
-			</ul>
+				</ul><!-- .comment-list -->
 		<?php endif; ?>
 		<?php if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) : ?>
 			<p class="no-comments">

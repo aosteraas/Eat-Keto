@@ -23,11 +23,11 @@
 			</div>
 			<div id="navbar" class="collapse navbar-collapse">
 				<ul class="nav navbar-nav">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Recipes</a></li>
-					<li><a href="#">Contact</a></li>
-					<li><a href="#">About</a></li>
+					<li><a href="/">Recipes</a></li>
+					<li><a href="/contact">Contact</a></li>
+					<li><a href="/about">About</a></li>
 				</ul>
+				<?php get_search_form(); ?>
 			</div>
 		</div>
 	</nav>
