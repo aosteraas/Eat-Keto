@@ -11,12 +11,12 @@
 			<div class="bs-component">
 				<div class="panel panel-primary">
 					<div class="panel-heading">
-					<h4>Yeild, Time, and Ingredients</h4>
+					<h4>Servings, Time, and Ingredients</h4>
 				</div>
 				<div class="panel-body" id="left-panel">
 				
 					<?php if(get_post_meta($post->ID, "foodpress_servings", true)) { ?>
-					<p>Yeild:  <?php echo get_post_meta($post->ID, "foodpress_servings", true); ?></p> 
+					<p>Servings:  <?php echo get_post_meta($post->ID, "foodpress_servings", true); ?></p> 
 					<?php } ?>
 					<?php if(get_post_meta($post->ID, "foodpress_cooking_time", true)) { ?>
 					<p>Cooking Time: ~<?php echo get_post_meta($post->ID, "foodpress_cooking_time", true); ?></p>
