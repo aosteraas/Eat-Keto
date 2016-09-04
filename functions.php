@@ -5,7 +5,9 @@ function my_scripts_and_styles() {
     wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '3.3.7');
     wp_enqueue_style( 'basix', get_template_directory_uri() . '/style.css', array(), '1.0.0');
     wp_enqueue_script( 'bootstrapjs', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '3.3.7');
+    wp_enqueue_script( 'myjs', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0', true );
 }
+
 add_action( 'wp_enqueue_scripts', 'my_scripts_and_styles' );
 
 if ( function_exists( 'add_theme_support' ) ) {
@@ -60,6 +62,7 @@ function eatketo_pagination($pages = '', $range = 3)
 if ( function_exists('register_sidebar') )
 	register_sidebar(array(
 	'name' => 'Right Sidebar',
+    'id' => 'sidebar-1',
 	'before_widget' => '<aside>',
 	'after_widget' => '</aside>',
 	'before_title' => '<div class="siebar-module siebar-module-inset"><h4>',
