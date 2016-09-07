@@ -49,8 +49,8 @@
 						<p><strong>Note:</strong> <?php the_field('note'); ?></p>
 						<?php } ?>
 						<p><strong>Protein:</strong> <?php the_field('protein'); ?></p>
-						<p><strong>Carbs:</strong> <?php the_field('fat'); ?></p>
-						<p><strong>Fat:</strong> <?php the_field('carbs'); ?></p>
+						<p><strong>Fat:</strong> <?php the_field('fat'); ?></p>
+						<p><strong>Carbs:</strong> <?php the_field('carbs'); ?></p>
 					</div>
 				</div>
 			</div>

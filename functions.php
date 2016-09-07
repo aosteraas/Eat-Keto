@@ -1,10 +1,20 @@
 <?php
 
-// CSS
+// CSS & JS
+function load_jquery_3() {
+    if(!is_admin() && $GLOBALS['pagenow'] != 'wp-login.php'){
+        wp_deregister_script( 'jquery' );
+        wp_register_script( 'jquery', '//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js', false, '3.1.0', true );
+        wp_enqueue_script( 'jquery' );
+    }
+}
+add_action( 'wp_enqueue_scripts', 'load_jquery_3' );
+
 function my_scripts_and_styles() {
+
     wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '3.3.7');
     wp_enqueue_style( 'basix', get_template_directory_uri() . '/style.css', array(), '1.0.0');
-    wp_enqueue_script( 'bootstrapjs', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '3.3.7');
+    wp_enqueue_script( 'bootstrapjs', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '3.3.7', true);
     wp_enqueue_script( 'myjs', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0', true );
 }
 
