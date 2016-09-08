@@ -10,8 +10,7 @@
 			?>
 
 		</div> <!-- /.col -->
-			<?php get_sidebar(); ?>
-		
+		<?php get_sidebar(); ?>
 	</div> <!-- /.row -->
-</div>
+</div> <!-- /.container -->
 <?php get_footer(); ?>
